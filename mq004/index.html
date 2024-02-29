@@ -4,51 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <style>
-        /* declarações gerais */
-         /*-- Configurações gerais --*/
-        * {
-            margin: 0;
-            padding: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        html, body {
-            width: 100vw;
-            height: 100vh;
-            background-color: #233eff;
-            background-size: contain; /* contem todo o conteudo na pagina */
-            background-repeat: no-repeat;
-        }
-
-        h1 {
-            color: white;
-            text-shadow: 2px 2px 0px #1526a7;
-            padding: 10px;
-        }
-
-        /* declarações retrato */
-        /*-- Aparelho em pé (portrait) --*/
-        @media screen and (orientation:portrait) {     
-            body {
-                background-image: url(../imagens/cev-portrait.jpg);
-                background-position: center bottom;
-            } 
-        }
-
-        /* declarações paisagem */
-        /*-- Aparelho em deitado (landscape) --*/
-        @media screen and (orientation:landscape) {
-            body {
-                background-image: url(../imagens/cev-landscape.jpg);
-                background-position: left bottom;
-            }     
-        }
-    </style>
-
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
-    <h1>Mude a orientação do seu dispositivo</h1>
-    
+    <main>
+        <h1>Testando Midia Queries</h1>
+        <img id="phone" src="imagens/icon-phone.png" alt="Acesssando via smartphone">
+        <img id="tablet" src="imagens/icon-tablet.png" alt="Acesssando via tablet">
+        <img id="print" src="imagens/icon-print.png" alt="Versão para impressão">
+        <img id="pc" src="imagens/icon-pc.png" alt="Versão para desktop">
+        <img id="tv" src="imagens/icon-tv.png" alt="Versãopara TV">
+    </main> 
 </body>
 </html>
